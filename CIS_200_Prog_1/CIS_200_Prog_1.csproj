@@ -42,6 +42,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="LibraryBook.cs" />
+    <Compile Include="LibraryItem.cs" />
+    <Compile Include="LibraryJournal.cs" />
+    <Compile Include="LibraryMagazine.cs" />
+    <Compile Include="LibraryMediaItem.cs" />
+    <Compile Include="LibraryMovie.cs" />
+    <Compile Include="LibraryMusic.cs" />
+    <Compile Include="LibraryPatron.cs" />
+    <Compile Include="LibraryPeriodical.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

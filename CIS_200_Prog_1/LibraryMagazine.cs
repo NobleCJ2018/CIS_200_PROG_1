@@ -11,14 +11,11 @@ Due_Date*******: xx XXX 2018
 Section********: CIS 200 01
 */
 
-    // FileName: Program.cs
+// FileName: LibraryMagazine.cs
 
 namespace CIS_200_Prog_1
 {
-    class Program
+    class LibraryMagazine
     {
-        static void Main(string[] args)
-        {
-        }
     }
 }
