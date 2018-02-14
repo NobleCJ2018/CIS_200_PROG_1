@@ -28,7 +28,7 @@ namespace CIS_200_Prog_1
                             : base(theTitle, thePublisher, theCopyrightYear, theLoanPeriod,
                                   theCallNumber, theDuration)
         {
-
+            Director = _director; // ??
         }
 
         public string Director
@@ -54,7 +54,8 @@ namespace CIS_200_Prog_1
 
         public override MediaType Medium
         {
-
+            // Precondition: Medium must be of type DVD/VHS/BLURAY only
+            // Postcondition: The medium has been set to the specified value
             get
             {
                 return _medium;
@@ -94,8 +95,7 @@ namespace CIS_200_Prog_1
                         ($"{nameof(Rating)}", value, $"{nameof(Rating)} please enter a valid MPAA rating");
             }
         }
-
-
+        
         public override decimal CalcLateFee(int daysLate)
         {
 
@@ -126,10 +126,6 @@ namespace CIS_200_Prog_1
 
             return chargeFee;
 
-            
-
-
-            
         }
 
         public override string ToString()
