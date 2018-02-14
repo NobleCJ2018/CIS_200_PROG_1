@@ -102,7 +102,7 @@ namespace CIS_200_Prog_1
             const decimal LATE_FEE_RATE_BLURAY = 1.50m; // Bluray daily rate
             const decimal LATE_FEE_RATE_DVD_VHS = 1.00m; // DVD/VHS daily rate
             const decimal MAX_CHARGE_LIMIT = 25.00m; // max limit for all movie types
-            decimal chargeFee;
+            decimal chargeFee; // the charge fee to be returned
             
             if (this.Medium == MediaType.DVD)
             {
