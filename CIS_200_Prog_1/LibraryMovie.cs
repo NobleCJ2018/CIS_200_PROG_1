@@ -19,7 +19,7 @@ namespace CIS_200_Prog_1
     {
         private string _director;
         private MediaType _medium;
-        private MPAARatings _ratings;
+        private MPAARatings _rating;
         public enum MPAARatings { G, PG, PG13, R, NC17, U };
 
         public LibraryMovie(string theTitle, string thePublisher, int theCopyrightYear, int theLoanPeriod,
@@ -73,11 +73,11 @@ namespace CIS_200_Prog_1
 
         }
 
-        public MPAARatings Ratings
+        public MPAARatings Rating
         {
             get
             {
-                return _ratings;
+                return _rating;
             }
 
             set
@@ -87,11 +87,11 @@ namespace CIS_200_Prog_1
                 if (value == MPAARatings.G || value == MPAARatings.PG || value == MPAARatings.PG13 ||
                    value == MPAARatings.R || value == MPAARatings.NC17 || value == MPAARatings.U)
                 {
-                    _ratings = value;
+                    _rating = value;
                 }
                 else
                     throw new ArgumentOutOfRangeException
-                        ($"{nameof(Ratings)}", value, $"{nameof(Ratings)} please enter a valid MPAA rating");
+                        ($"{nameof(Rating)}", value, $"{nameof(Rating)} please enter a valid MPAA rating");
             }
         }
 
@@ -130,6 +130,21 @@ namespace CIS_200_Prog_1
 
 
             
+        }
+
+        public override string ToString()
+        {
+            string NL = Environment.NewLine; // NewLine shortcut
+            string checkedOutBy; // Holds checked out message
+
+            if (IsCheckedOut())
+                checkedOutBy = $"Checked Out By: {Patron}";
+            else
+                checkedOutBy = "Not Checked Out";
+
+            return $"Title: {Title}{NL}Director: {Director}{NL}Publisher: {Publisher}{NL}" +
+                $"Copyright: {CopyrightYear}{NL}Call Number: {CallNumber}{NL}{checkedOutBy}{NL}" +
+                $"Media Type: {Medium}{NL}Rating: {Rating}";
         }
     }
 }
