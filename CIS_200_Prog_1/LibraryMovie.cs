@@ -17,9 +17,9 @@ namespace CIS_200_Prog_1
 {
     public class LibraryMovie : LibraryMediaItem
     {
-        private string _director;
-        private MediaType _medium;
-        private MPAARatings _rating;
+        private string _director;   //Backing director
+        private MediaType _medium;  //Backing medium
+        private MPAARatings _rating;    //Backing Rating
         public enum MPAARatings { G, PG, PG13, R, NC17, U };
 
         public LibraryMovie(string theTitle, string thePublisher, int theCopyrightYear, int theLoanPeriod,

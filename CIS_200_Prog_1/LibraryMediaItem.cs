@@ -41,7 +41,7 @@ namespace CIS_200_Prog_1
                     _duration = value;
                 else
                     throw new ArgumentOutOfRangeException
-                        ($"{nameof(Duration)}", value, $"{nameof(Duration)} must be greater or equal to zero");
+                        ($"{nameof(Duration)}", value, $"{nameof(Duration)} must be greater than or equal to zero");
             }
         }
 

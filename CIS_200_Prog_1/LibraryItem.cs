@@ -18,7 +18,7 @@ namespace CIS_200_Prog_1
     public abstract class  LibraryItem
     {
 
-        private string _title;  // Backing for Title
+        private string _title;      // Backing for Title
         private string _callNumber; //Backing for CallNumber
         private string _publisher;  //Backing for Publisher
         private int _copyrightYear; //Backing for Copyright Year

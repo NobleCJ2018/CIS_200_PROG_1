@@ -17,5 +17,10 @@ namespace CIS_200_Prog_1
 {
     public class LibraryMagazine
     {
+
+
+
+
+
     }
 }
