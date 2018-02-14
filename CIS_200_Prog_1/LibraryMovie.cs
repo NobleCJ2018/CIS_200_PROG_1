@@ -15,7 +15,7 @@ Section********: CIS 200 01
 
 namespace CIS_200_Prog_1
 {
-    class LibraryMovie
+    public class LibraryMovie
     {
     }
 }

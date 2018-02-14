@@ -222,7 +222,7 @@ namespace CIS_200_Prog_1
 
         // Precondition:  None
         // Postcondition: None Abstract
-        public abstract decimal CalcLateFee();
+        public abstract decimal CalcLateFee(int daysLate);
         
 
 

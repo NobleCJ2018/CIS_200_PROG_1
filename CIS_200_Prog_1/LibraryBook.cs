@@ -20,15 +20,11 @@ namespace CIS_200_Prog_1
         private string _author;
 
 
-        public LibraryBook(string theTitle, string theAuthor, string thePublisher, int theCopyrightYear, 
-                           int theLoanPeriod, string theCallNumber)
+        public LibraryBook(string theTitle, string theAuthor, string thePublisher, int theCopyrightYear,
+               int theLoanPeriod, string theCallNumber)
+            : base(theTitle,thePublisher,theCopyrightYear,theLoanPeriod, theCallNumber)
         {
-            Title = theTitle;
-            Author = theAuthor;
-            Publisher = thePublisher;
-            CopyrightYear = theCopyrightYear;
-            LoanPeriod = theLoanPeriod;
-            CallNumber = theCallNumber;
+            Author = _author;          
         }
 
         public string Author
@@ -54,7 +50,7 @@ namespace CIS_200_Prog_1
             }
         }
 
-        public decimal CalcLateFee(int daysLate)
+        public override decimal CalcLateFee(int daysLate)
         {
 
         const decimal LATE_FEE_RATE = 0.25m;

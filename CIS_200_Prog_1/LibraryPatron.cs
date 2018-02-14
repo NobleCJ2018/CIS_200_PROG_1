@@ -16,7 +16,7 @@ Section********: CIS 200 01
 
 namespace CIS_200_Prog_1
 {
-    class LibraryPatron
+    public class LibraryPatron
     {
         private string _patronName; // Name of the patron
         private string _patronID;   // ID of the patron
