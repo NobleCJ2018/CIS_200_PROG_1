@@ -93,13 +93,13 @@ namespace CIS_200_Prog_1
             string checkedOutBy; // Holds checked out message
 
             if (IsCheckedOut())
-                checkedOutBy = $"Checked Out By: {Patron}";
+                checkedOutBy = $"Checked Out By: {NL}{Patron}";
             else
                 checkedOutBy = "Not Checked Out";
 
             return $"Title: {Title}{NL}Publisher: {Publisher}{NL}" +
                 $"Copyright: {CopyrightYear}{NL}Call Number: {CallNumber}{NL}{checkedOutBy}{NL}" +
-                $"Volume: {Volume}{NL}Number: {Number}{NL}Discipline: {Discipline}" +
+                $"Volume: {Volume}{NL}Number: {Number}{NL}Discipline: {Discipline}{NL}" +
                 $"Editor: {Editor}";
         }
 

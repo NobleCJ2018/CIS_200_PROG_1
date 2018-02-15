@@ -217,7 +217,7 @@ namespace CIS_200_Prog_1
                 checkedOutBy = "Not Checked Out";
 
             return $"Title: {Title}{NL}Publisher: {Publisher}{NL}" +
-                $"Copyright: {CopyrightYear}{NL}Call Number: {CallNumber}{NL}{checkedOutBy}";
+                $"Copyright: {CopyrightYear}{NL}Call Number: {CallNumber}{NL}{checkedOutBy}{NL}";
         }
 
         // Precondition:  None

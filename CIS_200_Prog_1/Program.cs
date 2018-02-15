@@ -23,7 +23,10 @@ namespace CIS_200_Prog_1
 
             //Make one of each library item type
 
-            LibraryPatron Pat1 = new LibraryPatron("Bob Dole", "1988");
+            decimal displayLateFee;
+            string overDueMessage = "Est. if item is 2 weeks overdue:";
+
+            LibraryPatron Pat1 = new LibraryPatron("Bob Dole", "ID5485");
             LibraryBook book1 = new LibraryBook("Book 1", "Mr. Dole", "Dole Press", 1988, 90, "B1988");
             LibraryJournal journal1 = new LibraryJournal("Journal 1", "Dole Press", 1988, 90, "J1988", 10, 100,
                                                          "Trickle Down", "Ross Perot");
@@ -44,16 +47,34 @@ namespace CIS_200_Prog_1
             music1.CheckOut(Pat1);
 
             //display some items
-
             Console.WriteLine(book1.ToString());
+            Console.Write(overDueMessage); //and if late??
+            displayLateFee = book1.CalcLateFee(14);
+            Console.WriteLine($"{displayLateFee.ToString("C")}");
             Pause();
+
             Console.WriteLine(journal1.ToString());
+            Console.Write(overDueMessage);
+            displayLateFee = journal1.CalcLateFee(14);
+            Console.WriteLine($"{displayLateFee.ToString("C")}");
             Pause();
+
             Console.WriteLine(magazine1.ToString());
+            Console.Write(overDueMessage);
+            displayLateFee = magazine1.CalcLateFee(14);
+            Console.WriteLine($"{displayLateFee.ToString("C")}");
             Pause();
+
             Console.WriteLine(movie1.ToString());
+            Console.Write(overDueMessage);
+            displayLateFee = movie1.CalcLateFee(14);
+            Console.WriteLine($"{displayLateFee.ToString("C")}");
             Pause();
+
             Console.WriteLine(music1.ToString());
+            Console.Write(overDueMessage);
+            displayLateFee = music1.CalcLateFee(14);
+            Console.WriteLine($"{displayLateFee.ToString("C")}");
             Pause();
 
 

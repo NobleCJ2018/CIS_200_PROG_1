@@ -134,7 +134,7 @@ namespace CIS_200_Prog_1
             string checkedOutBy; // Holds checked out message
 
             if (IsCheckedOut())
-                checkedOutBy = $"Checked Out By: {Patron}";
+                checkedOutBy = $"Checked Out By: {NL}{Patron}";
             else
                 checkedOutBy = "Not Checked Out";
 
