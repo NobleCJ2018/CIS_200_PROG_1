@@ -25,8 +25,8 @@ namespace CIS_200_Prog_1
                                 :base(theTitle, thePublisher, theCopyrightYear, theLoanPeriod, theCallNumber)
         {
 
-            Volume = _volume;
-            Number = _number;
+            Volume = theVolume;
+            Number = theNumber;
         }
 
         public int Volume

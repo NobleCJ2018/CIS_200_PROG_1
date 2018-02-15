@@ -19,6 +19,60 @@ namespace CIS_200_Prog_1
     {
         static void Main(string[] args)
         {
+            // TEST APPLICATION PLEASE IGNORE - MIDDLE MGMT DINO
+
+            //Make one of each library item type
+
+            LibraryPatron Pat1 = new LibraryPatron("Bob Dole", "1988");
+            LibraryBook book1 = new LibraryBook("Book 1", "Mr. Dole", "Dole Press", 1988, 90, "B1988");
+            LibraryJournal journal1 = new LibraryJournal("Journal 1", "Dole Press", 1988, 90, "J1988", 10, 100,
+                                                         "Trickle Down", "Ross Perot");
+            LibraryMagazine magazine1 = new LibraryMagazine("The Wright Stuff", "Dole Press", 1988, 90, "M1988",
+                                                            20, 200);
+            LibraryMovie movie1 = new LibraryMovie("Code Wars: A New Hope", "Dole Press", 1988, 90, "MO1988",
+                                                   120.00, "Raplh Nader", LibraryMediaItem.MediaType.BLURAY,
+                                                   LibraryMovie.MPAARatings.NC17);
+            LibraryMusic music1 = new LibraryMusic("Higgz BugZon", "Dole Press", 1988, 90, "MU1988", 731, "DJ BeeDole",
+                                                   LibraryMediaItem.MediaType.VINYL, 32);
+
+            // check out items
+
+            journal1.CheckOut(Pat1);
+            book1.CheckOut(Pat1);
+            magazine1.CheckOut(Pat1);
+            movie1.CheckOut(Pat1);
+            music1.CheckOut(Pat1);
+
+            //display some items
+
+            Console.WriteLine(book1.ToString());
+            Pause();
+            Console.WriteLine(journal1.ToString());
+            Pause();
+            Console.WriteLine(magazine1.ToString());
+            Pause();
+            Console.WriteLine(movie1.ToString());
+            Pause();
+            Console.WriteLine(music1.ToString());
+            Pause();
+
+
+
+
+
+
+            
+        }
+
+        // Precondition:  None
+        // Postcondition: Pauses program execution until user presses Enter and
+        //                then clears the screen
+        public static void Pause()
+        {
+            Console.WriteLine("Press Enter to Continue...");
+            Console.ReadLine();
+
+            Console.Clear(); // Clear screen
         }
     }
 }

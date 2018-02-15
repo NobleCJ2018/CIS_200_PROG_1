@@ -29,9 +29,9 @@ namespace CIS_200_Prog_1
                             : base(theTitle, thePublisher, theCopyrightYear, theLoanPeriod,
                                    theCallNumber, theDuration)
         {
-            Artist = _artist;
-            Medium = _medium;
-            NumTracks = _numTracks;
+            Artist = theArtist;
+            Medium = theMedium;
+            NumTracks = theNumTracks;
         }
 
         public string Artist

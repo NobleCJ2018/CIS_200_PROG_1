@@ -24,7 +24,7 @@ namespace CIS_200_Prog_1
                int theLoanPeriod, string theCallNumber)
             : base(theTitle,thePublisher,theCopyrightYear,theLoanPeriod, theCallNumber)
         {
-            Author = _author;          
+            Author = theAuthor;          
         }
 
         public string Author

@@ -28,7 +28,7 @@ namespace CIS_200_Prog_1
                             : base(theTitle, thePublisher, theCopyrightYear, theLoanPeriod,
                                   theCallNumber, theDuration)
         {
-            Director = _director; // ??
+            Director = theDirector; // ??
         }
 
         public string Director

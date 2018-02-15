@@ -28,8 +28,8 @@ namespace CIS_200_Prog_1
                               :base(theTitle, thePublisher, theCopyrightYear, theLoanPeriod, theCallNumber,
                                     theVolume, theNumber)
         {
-            Discipline = _discipline;
-            Editor = _editor;
+            Discipline = theDiscipline;
+            Editor = theEditor;
 
         }
 

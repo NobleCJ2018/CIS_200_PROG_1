@@ -22,10 +22,10 @@ namespace CIS_200_Prog_1
         public enum MediaType { DVD, BLURAY, VHS, CD, SACD, VINYL};
 
         public LibraryMediaItem(string theTitle, string thePublisher, int theCopyrightYear, int theLoanPeriod,
-                                string theCallNumber, double duration)
+                                string theCallNumber, double theDuration)
                                 :base(theTitle, thePublisher, theCopyrightYear, theLoanPeriod, theCallNumber)
         {
-            Duration = _duration;
+            Duration = theDuration;
         }
 
         public double Duration
